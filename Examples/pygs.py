@@ -7,6 +7,7 @@ def single_thread_wrapper(mwfunc, Lparms, Rparms, Parms, E_arr, mu_arr, f_arr, v
     _doublep = ndpointer(dtype=ctypes.c_double, flags='C')
     mwfunc.argtypes = [_intp, _doublep, _doublep, _doublep, _doublep, _doublep, _doublep]
     mwfunc.restype = ctypes.c_int
+    
     # force the data types to what they need to be
     Lparms = np.array(Lparms, dtype='int32')
     Rparms = np.array(Rparms, dtype='double')

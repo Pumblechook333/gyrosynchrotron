@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import pygs  # Python wrapper located in the same directory. If not, need to include the path using sys.path.append()
 
 # libname is the path to the C++ shared library. Modify as needed
-libname = '../Binaries/MWTransferArr.so'
+libname = '../Binaries/MWTransferArr64.dll'
 
 #
 Nf = 100  # number of frequencies
